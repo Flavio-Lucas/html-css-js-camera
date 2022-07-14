@@ -45,7 +45,8 @@ cameraTrigger.onclick = function () {
 };
 
 cameraToggle.onclick = function () {
-    cameraStart();
+    cameraToggle();
+    // cameraStart();
 }
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
