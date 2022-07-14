@@ -23,19 +23,30 @@ body {
     filter: FlipH;
 }
 
-#camera--trigger {
-    width: 200px;
+#camera--toggle, #camera--trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     color: white;
     font-size: 16px;
     border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+    font-size: 2rem;
+}
+
+#camera--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
     border: none;
-    padding: 15px 20px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
     bottom: 30px;
-    left: calc(50% - 100px);
 }
 
 .taken {
