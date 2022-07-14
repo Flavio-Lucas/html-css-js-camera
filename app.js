@@ -7,7 +7,7 @@ const CameraEnum = {
 const currentFacingMode = CameraEnum.USER;
 
 // Set constraints for the video stream
-var constraints = { video: { facingMode: { exact: currentFacingMode } }, audio: false };
+var constraints = { video: { facingMode: { exact: 'user' } }, audio: false };
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
